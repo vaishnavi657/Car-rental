@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <!-- header section starts -->
+    <nav>
+        <a href="index.html" class="brand">
+            <h2>Car Rental</h2>
+        </a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"> </i>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="collection.html">Cars</a>
+            <a href="#testimonials">Reviews</a>
+        </div>
+
+        <button class="btn-2" onclick="window.location.href='contact.html' ">Get started</button>
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </nav>
+
+    <!-- header section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact">
+        <h1>Get in touch for your dream ride!</h1>
+        <p>
+            Have questions or need assistance? Our team is here to help you to find the
+            perfect car for your adventure.
+        </p>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your access key -->
+             <input type="hidden" name="access_key" value="cafca6a6-6d0f-4f28-b5fa-82cbaefa69ce">
+              <div class="car-select">
+                <div class="car-select-item">
+                    <label for="location">Location</label>
+                    <select name="location" class="car-select-input" id="location">
+                        <option value="California">California</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </div>
+
+                <div class="car-select-item">
+                    <label for="car-type">Car to rent</label>
+                    <select name="car-type" class="car-select-input" id="car-type">
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Lamborghini Venemo">Lamborghini Venemo</option>
+                        <option value="Rolls Royce Dawn">Rolls Royce Dawn</option>
+                        <option value="Toyota 86 - Coupe">Toyota 86 - Coupe</option>
+                    </select>
+                </div>
+
+                <div class="car-select-item">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" class="car-select-input"/>
+                </div>
+              </div>
+
+              <div class="contact-form">
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="phone" name="phone" placeholder="Phone" required />
+              </div>
+
+              <br>
+              <button type="submit" class="btn-2">Submit</button>
+        </form>
+    </section>
+
+    <!-- contact section ends -->
+
+
+    <!-- footer section starts -->
+    <footer class="contact-footer">
+        <div class="callout">
+            <h2>Let's drive</h2>
+            <p class="callout-description">
+                Need assistance or ready to reserve your wheels? Contact us now for
+                 prompt service and effortless booking!
+            </p>
+            <div class="callout-buttons">
+                <button class="btn-2 btn-callout" onclick="window.location.href='collection.html'">
+                    <p>Check our cars</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <button class="btn-2 btn-callout btn-callout-black" onclick="window.location.href='contact.html'">
+                    <p>Book Now</p>
+                    <i class="fa-solid fa-phone"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <a href="" class="footer-brand">Car Rental</a>
+            <div class="socials">
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+
+                <a href="/" class="social-item">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer section ends -->
+
+
+    <script src="./index.js" defer></script>
+</body>
+</html>
